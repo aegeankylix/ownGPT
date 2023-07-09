@@ -7,7 +7,7 @@ sbcol1, sbcol2 = st.columns([5,1])
 
 BASE_PROMPT = [{"role": "system", "content": "You are a helpful assistant for Tanner Phillips. He's a Data Scientist, has a wife and two kids, and a PhD in education. Mainly you help him with work / personal coding projects, but he likes help with creative ideas too."}]
 DATA_FILE = "conversations.json"
-openai.api_key = os.getenv("OPENAI_TOKEN")
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 def add_to_data_file(messages):
     if os.path.exists(DATA_FILE):
