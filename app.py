@@ -3,6 +3,11 @@ import os
 import openai
 import streamlit as st
 
+Headers = {
+“authorization": st.secrets["OPENAI_API_KEY"],
+“content-type": "application/json" 
+}
+
 sbcol1, sbcol2 = st.columns([5,1])
 
 BASE_PROMPT = [{"role": "system", "content": "You are a helpful assistant for Tanner Phillips. He's a Data Scientist, has a wife and two kids, and a PhD in education. Mainly you help him with work / personal coding projects, but he likes help with creative ideas too."}]
