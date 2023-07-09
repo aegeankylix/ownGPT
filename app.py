@@ -4,9 +4,10 @@ import openai
 import streamlit as st
 
 Headers = {
-“authorization": st.secrets["OPENAI_API_KEY"],
-“content-type": "application/json" 
+"authorization": st.secrets["OPENAI_API_KEY"],
+"content-type": "application/json" 
 }
+
 
 sbcol1, sbcol2 = st.columns([5,1])
 
